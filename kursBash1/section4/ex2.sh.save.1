@@ -1,0 +1,10 @@
+#!/bin/bash
+
+file_count(){
+	local DIRECTORY=$1
+	local NUMBER_OF_FILES=$(ls -1 | wc -l)
+        echo "$DIRECTORY . "
+	echo "There are $NUMBER_OF_FILES files in the working directory"
+}
+file_count
+
