@@ -1,4 +1,5 @@
 #!/bin/bash
-TEXT="This xxxx  script is running on: "
+
+TEXT="This xxxxx script is running on xxx: "
 HOST=$(hostname)
 echo ${TEXT}${HOST}
