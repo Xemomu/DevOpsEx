@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-app-pod
+  namespace: akademia
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-flask-app
+  template:
+    metadata:
+      labels:
+        app: my-flask-app
+    spec:
+      containers:
+      - name: flask-app-container
+        image: europe-central2-docker.pkg.dev/devopsapp1/flask-app1/flask-app
+        ports:
+        - containerPort: 8080
