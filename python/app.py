@@ -23,7 +23,7 @@ def health():
 if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG)
     app.logger.info("Starting application version 1.4")
-    app.logger.info("Environment: Production")  # Assuming the environment is production
+    app.logger.info("Environment: Production")
     app.logger.info("Log levels: CRITICAL, ERROR, WARNING, INFO, DEBUG, NOTSET")
     app.logger.info("Endpoints: /get-item, /author, /health")
     app.run(debug=True, host='0.0.0.0', port=8080)
